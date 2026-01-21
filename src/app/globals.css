@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-[#0f0f14] text-[#e5e7eb];
+}
+
+main {
+  @apply mx-auto max-w-4xl px-4 py-12;
+}
+* {
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease,
+              transform 0.3s ease;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+:root {
+  --cursor-x: 50vw;
+  --cursor-y: 50vh;
+}
+
+body {
+  background:
+    radial-gradient(
+      600px circle at var(--cursor-x) var(--cursor-y),
+      rgba(255, 255, 255, 0.06),
+      transparent 40%
+    ),
+    #0f0f14;
+}
+
