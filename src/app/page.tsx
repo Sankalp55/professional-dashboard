@@ -19,20 +19,42 @@ export default function HomePage() {
       <Header />
 
       <Section title="Internship">
-        <div className="space-y-2 border-l border-white/10 pl-4">
-          <h3 className="text-lg font-semibold text-white">
-            {internship.company}
-          </h3>
+          <div className="space-y-4">
+            {/* Text content */}
+            <div className="space-y-2">
+              <h3 className="text-lg font-semibold text-white">
+                {internship.company}
+              </h3>
 
-          <p className="text-sm font-medium text-gray-400">
-            {internship.role}
-          </p>
+              <p className="text-sm font-medium text-gray-400">
+                {internship.role}
+              </p>
 
-          <p className="text-sm leading-relaxed text-gray-300">
-            {internship.description}
-          </p>
-        </div>
+              <p className="text-sm leading-relaxed text-gray-300">
+                {internship.description}
+              </p>
+            </div>
+
+            {/* Video demo */}
+            <div className="pt-2">
+              <p className="mb-2 text-xs uppercase tracking-wide text-gray-500">
+                UI walkthrough
+              </p>
+
+              <video
+                src="/crivey-ui-demo.mp4.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                className="w-full rounded-lg border border-white/10 bg-black"
+              />
+
+            </div>
+          </div>
       </Section>
+
 
 
       <Section title="Projects">
