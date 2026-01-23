@@ -2,7 +2,8 @@ export const profile = {
   name: "Sankalp Tyagi",
   role: "Frontend Developer",
   summary:
-  "Frontend-focused full-stack developer with a strong interest in UI engineering. I build clean, scalable, and responsive user interfaces using React and Next.js, focusing on reusable components, interaction quality, and modern frontend patterns. Experienced with real-world projects, internships, and AI-assisted development workflows.",
+  "Frontend-focused full-stack developer passionate about UI engineering. I build clean, scalable, and responsive interfaces using React and Next.js, with an emphasis on reusable components and interaction quality. I also have experience working with APIs and backend integrations for real-world projects, and I actively use AI-assisted workflows to improve development efficiency.",
+
 
   links: {
     resume: "/sankalp_wresume-2026.pdf",

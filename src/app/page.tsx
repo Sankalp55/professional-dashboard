@@ -4,6 +4,7 @@ import Image from "next/image";
 import Header from "@/src/components/Header";
 import Section from "@/src/components/Section";
 import SkillTag from "@/src/components/SkillTag";
+import ContactForm from "@/src/components/ContactForm";
 
 import { internship } from "@/src/data/internship";
 import { projects } from "@/src/data/projects";
@@ -72,7 +73,7 @@ export default function HomePage() {
                 {project.description}
               </p>
 
-              {/* ✅ Project Images (ONLY if present) */}
+              {/* Project Images */}
               {project.images?.length ? (
                 <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                   {project.images.map((img, i) => (
@@ -101,6 +102,15 @@ export default function HomePage() {
             </div>
           ))}
         </div>
+      </Section>
+
+      {/* ================= Contact ================= */}
+      <Section title="Contact">
+        <p className="text-sm text-gray-400">
+          For contact, leave a message
+        </p>
+
+        <ContactForm />
       </Section>
     </main>
   );

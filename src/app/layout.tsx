@@ -1,6 +1,5 @@
 import CursorGradient from "../components/CursorGradient";
-
-import Navbar from "@/src/components/Navbar";
+import Navbar from "../components/Navbar";
 import "./globals.css";
 
 export default function RootLayout({
@@ -10,10 +9,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="relative">
+        {/* Cursor gradient background layer */}
+        <div className="cursor-gradient" />
+
+        {/* Cursor tracker */}
         <CursorGradient />
-        <Navbar />
-        {children}
+
+        {/* App content */}
+        <div className="relative z-10">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
