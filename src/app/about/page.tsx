@@ -26,7 +26,7 @@ export default function AboutPage() {
             at Manipal University Jaipur. Alongside academics, I’ve worked on
             real-world frontend projects and completed a frontend development
             internship, where I collaborated closely with backend teams and product
-            stakeholders to build and refine user-facing features.
+            stakeholders to translate designs into high-quality user interfaces.
           </p>
 
           {/* UI & Development Approach */}
@@ -36,10 +36,40 @@ export default function AboutPage() {
             </h3>
 
             <ul className="list-inside list-disc space-y-1 text-sm text-gray-400">
-              <li>Design and build reusable, modular UI components</li>
-              <li>Focus on spacing, visual hierarchy, and interaction feedback</li>
-              <li>Ensure responsive layouts and cross-device compatibility</li>
-              <li>Integrate REST APIs and handle UI state and user interactions</li>
+              <li>
+                Build reusable, modular UI components using React and Next.js
+              </li>
+              <li>
+                Implement smooth interactions and animations using{" "}
+                <span className="font-medium text-white">
+                  Framer Motion
+                </span>
+              </li>
+              <li>
+                Translate{" "}
+                <span className="font-medium text-white">
+                  Figma
+                </span>{" "}
+                designs into pixel-accurate, responsive layouts
+              </li>
+              <li>
+                Work with{" "}
+                <span className="font-medium text-white">
+                  Wix-based workflows
+                </span>{" "}
+                when required, customizing and extending UI behavior beyond
+                templates
+              </li>
+              <li>
+                Integrate{" "}
+                <span className="font-medium text-white">
+                  REST APIs
+                </span>{" "}
+                and manage UI state, loading states, and error handling
+              </li>
+              <li>
+                Ensure responsive layouts and consistent behavior across devices
+              </li>
             </ul>
           </div>
 
@@ -49,9 +79,9 @@ export default function AboutPage() {
             <span className="font-medium text-white">
               AI-assisted development workflows
             </span>
-            , using AI tools for rapid UI iteration, debugging, refactoring, and
-            improving code readability—while still following clean code practices
-            and maintaining quality standards.
+            , using AI tools to accelerate UI iteration, debug issues, refactor
+            components, and improve code readability—while still following clean
+            code practices and maintaining quality standards.
           </p>
 
           {/* Future goals */}
@@ -62,7 +92,7 @@ export default function AboutPage() {
             <span className="font-medium text-white">
               strong UI-focused full-stack engineer
             </span>{" "}
-            who cares deeply about both usability and maintainable code.
+            who cares deeply about usability, performance, and maintainable code.
           </p>
         </div>
       </Section>
