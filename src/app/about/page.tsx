@@ -20,7 +20,6 @@ export default function AboutPage() {
             details.
           </p>
 
-          {/* Background */}
           <p className="text-sm leading-relaxed text-gray-400">
             I’m currently pursuing my B.Tech in Computer & Communication Engineering
             at Manipal University Jaipur. Alongside academics, I’ve worked on
@@ -29,7 +28,7 @@ export default function AboutPage() {
             stakeholders to translate designs into high-quality user interfaces.
           </p>
 
-          {/* UI & Development Approach */}
+   
           <div className="pt-2">
             <h3 className="mb-2 text-sm font-semibold text-white">
               How I approach UI development
@@ -73,7 +72,6 @@ export default function AboutPage() {
             </ul>
           </div>
 
-          {/* AI-assisted development */}
           <p className="text-sm leading-relaxed text-gray-400">
             I’m comfortable working in{" "}
             <span className="font-medium text-white">

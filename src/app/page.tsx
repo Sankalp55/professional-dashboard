@@ -20,7 +20,6 @@ export default function HomePage() {
     <main>
       <Header />
 
-      {/* ================= Internship ================= */}
       <Section title="Internship">
         <div className="space-y-4">
           <div className="space-y-2">
@@ -55,7 +54,6 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* ================= Projects ================= */}
       <Section title="Projects">
         <div className="space-y-6">
           {projects.map((project, index) => (
@@ -63,17 +61,14 @@ export default function HomePage() {
               key={index}
               className="rounded-lg border border-white/10 bg-[#111118] p-5"
             >
-              {/* Title */}
               <h3 className="text-lg font-semibold text-white">
                 {project.title}
               </h3>
 
-              {/* Description */}
               <p className="mt-2 text-sm leading-relaxed text-gray-400">
                 {project.description}
               </p>
 
-              {/* Project Images */}
               {project.images?.length ? (
                 <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                   {project.images.map((img, i) => (
@@ -93,7 +88,6 @@ export default function HomePage() {
                 </div>
               ) : null}
 
-              {/* Tech Stack */}
               <div className="mt-4 flex flex-wrap gap-2">
                 {project.tech.map((skill) => (
                   <SkillTag key={skill} label={skill} />
@@ -104,7 +98,6 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* ================= Contact ================= */}
       <Section title="Contact">
         <p className="text-sm text-gray-400">
           For contact, leave a message

@@ -40,7 +40,6 @@ export default function ContactForm() {
 
   return (
     <div className="mt-6 max-w-md">
-      {/* ================= Direct Contact Info ================= */}
       <div className="mb-5 rounded-md border border-white/10 bg-[#0f0f14] p-4 text-sm text-gray-300">
         <p className="mb-1 text-gray-400">You can also reach me directly:</p>
 
@@ -55,7 +54,7 @@ export default function ContactForm() {
         </p>
       </div>
 
-      {/* ================= Contact Form ================= */}
+
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"
@@ -93,7 +92,6 @@ export default function ContactForm() {
         </button>
       </form>
 
-      {/* ================= Status Messages ================= */}
       {status === "success" && (
         <div className="mt-4 rounded-md border border-green-500/30 bg-green-500/10 p-3 text-sm text-green-400">
           ✅ Message sent successfully. I’ll get back to you soon.
